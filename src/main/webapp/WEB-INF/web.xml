@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>project</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+        <servlet-name>SignupController</servlet-name>
+        <servlet-class>com.example.controller.SignupController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SignupController</servlet-name>
+        <url-pattern>/signupHandler</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.example.controller.LoginController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/loginHandler</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>AddProductController</servlet-name>
+        <servlet-class>com.example.controller.AddProductController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddProductController</servlet-name>
+        <url-pattern>/addProductHandler</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>UpdateProductController</servlet-name>
+        <servlet-class>com.example.controller.UpdateProductController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateProductController</servlet-name>
+        <url-pattern>/updateProductHandler</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>DeleteProductController</servlet-name>
+        <servlet-class>com.example.controller.DeleteProductController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteProductController</servlet-name>
+        <url-pattern>/deleteProductHandler</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>ShowProductServlet</servlet-name>
+        <servlet-class>com.example.servlet.ShowProductServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowProductServlet</servlet-name>
+        <url-pattern>/showProduct</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ShowProductController</servlet-name>
+        <servlet-class>com.example.controller.ShowProductController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowProductController</servlet-name>
+        <url-pattern>/showproduct</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
