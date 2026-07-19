@@ -180,12 +180,12 @@ h2 {
 
 						// Iterate through the result set and display data
 						while (rs.next()) {
-							int productId = rs.getInt("id");
+							int productId = rs.getInt("productid");
 							String productName = rs.getString("productname");
 							String description = rs.getString("description");
 							String category = rs.getString("category");
 							double price = rs.getDouble("price");
-							int stockLevel = rs.getInt("stock_level");
+							int stockLevel = rs.getInt("stocklevel");
 					%>
 					<tr>
 						<td><%=productId%></td>

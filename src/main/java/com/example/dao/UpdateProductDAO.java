@@ -27,7 +27,7 @@ public class UpdateProductDAO {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
 
             // SQL query to update product
-            String sql = "UPDATE products SET productname = ?,description=?,category=?,price=?,stock_level=? WHERE id = ?";
+            String sql = "UPDATE products SET productname = ?,description=?,category=?,price=?,stocklevel=? WHERE productid = ?";
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, updateProduct.getProductname());
             preparedStatement.setString(2, updateProduct.getDescription());
