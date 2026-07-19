@@ -8,20 +8,19 @@ import java.sql.SQLException;
 
 public class AddProductDAO {
 
-	// Database URL, username, and password should be configured according to your
-	// setup
-	private static final String URL = "jdbc:mysql://localhost:3306/db";
-	private static final String USER = "root";
-	private static final String PASSWORD = "";
+			private static final String URL =
+			"jdbc:mysql://tokaido.proxy.rlwy.net:38953/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
 
-	// JDBC driver class
-	private static final String DRIVER = "com.mysql.jdbc.Driver";
+			private static final String USER = "root";
 
+			private static final String PASSWORD = "XqWYRurpdWpjhNxofvATWTxkxkSzCjDe";
+
+			private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 	// Method to add a product
 	public boolean addProduct(Product product) {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
-		boolean isAdded = false;
+		boolean isAdded = false;	
 
 		try {
 			// Load JDBC driver
@@ -31,7 +30,7 @@ public class AddProductDAO {
 			connection = DriverManager.getConnection(URL, USER, PASSWORD);
 
 			// SQL query to insert product
-			String sql = "INSERT INTO products (id,productname, description, category, price, stock_level) VALUES (?, ?, ?, ?, ?, ?)";
+			String sql = "INSERT INTO products (productid,productname, description, category, price, stocklevel) VALUES (?, ?, ?, ?, ?, ?)";
 			preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1,product.getProductid());
 			preparedStatement.setString(2, product.getProductname());

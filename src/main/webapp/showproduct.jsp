@@ -167,11 +167,13 @@ h2 {
 					ResultSet rs = null;
 					try {
 						// Database connection setup (modify these details as needed)
-						String dbURL = "jdbc:mysql://localhost:3306/db";
+						String dbURL = "jdbc:mysql://tokaido.proxy.rlwy.net:38953/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
 						String dbUser = "root";
-						String dbPassword = "";
+						String dbPassword = "XqWYRurpdWpjhNxofvATWTxkxkSzCjDe";
+						
+						
 
-						Class.forName("com.mysql.jdbc.Driver");
+						Class.forName("com.mysql.cj.jdbc.Driver");
 						conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
 						stmt = conn.createStatement();
 

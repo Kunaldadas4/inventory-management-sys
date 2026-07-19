@@ -9,12 +9,14 @@ import java.sql.SQLException;
 public class UserDAO1 {
 
     // Database URL, username, and password should be configured according to your setup
-    private static final String URL = "jdbc:mysql://localhost:3306/db";
-    private static final String USER = "root";
-    private static final String PASSWORD = "";
+	private static final String URL =
+			"jdbc:mysql://tokaido.proxy.rlwy.net:38953/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
 
-    // JDBC driver class
-    private static final String DRIVER = "com.mysql.jdbc.Driver";
+			private static final String USER = "root";
+
+			private static final String PASSWORD = "XqWYRurpdWpjhNxofvATWTxkxkSzCjDe";
+
+			private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
     // Method to authenticate a user
     public boolean authenticateUser(String username, String password) {
