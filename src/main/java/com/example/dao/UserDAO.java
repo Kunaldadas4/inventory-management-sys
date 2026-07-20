@@ -34,7 +34,7 @@ public class UserDAO {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
 
             // SQL query to insert user data
-            String sql = "INSERT INTO employee VALUES (?, ?, ?, ?)";
+            String sql = "INSERT INTO employee(name,email,username,password) VALUES (?, ?, ?, ?)";
             preparedStatement = connection.prepareStatement(sql);
 
             // Set parameters

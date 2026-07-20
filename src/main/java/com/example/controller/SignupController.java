@@ -43,7 +43,7 @@ public class SignupController extends jakarta.servlet.http.HttpServlet {
 		if (isInserted) {
 			request.getRequestDispatcher("login.jsp").forward(request, response);
 		} else {
-			request.getRequestDispatcher("sign_up.jsp").forward(request, response);
+			request.getRequestDispatcher("Sign_up.jsp").forward(request, response);
 		}
 	}
 }
